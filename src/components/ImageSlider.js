@@ -1,6 +1,20 @@
+import ImageData from "./ImageData"
+
 const ImageSlider=()=>{
   return(
-    <h1>Image Component</h1>
+    <section className="slider">
+      {ImageData.map((data,index)=>{
+        return(
+          <div className="slide" key={index}>
+            <div>
+              <img src={data.image} alt={data.title} className="image"/>
+              <p>{data.title}</p>
+            </div>
+          </div>
+        )
+      })}
+    </section>
+    
   )
 }
 
