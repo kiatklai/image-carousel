@@ -10,3 +10,19 @@
   justify-content: center;
   align-items: center;
 }
+.leftArrow{
+  position: absolute;
+  top: 50%;
+  left: 150px;
+  font-size: 5rem;
+  z-index: 10;
+  cursor: pointer;
+}
+.rightArrow{
+  position: absolute;
+  top: 50%;
+  right: 150px;
+  font-size: 5rem;
+  z-index: 10;
+  cursor: pointer;
+}
